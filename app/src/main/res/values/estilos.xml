@@ -3,7 +3,7 @@
 
     <!-- Estilo para el texto del título -->
     <style name="EstiloTituloBarraNavegacion" parent="TextAppearance.Widget.AppCompat.Toolbar.Title">
-        <item name="android:textSize">27sp</item>
+        <item name="android:textSize">25sp</item>
         <item name="android:textColor">@color/white</item>
     </style>
 
