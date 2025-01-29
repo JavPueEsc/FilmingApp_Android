@@ -3,59 +3,42 @@ package es.studium.pmdm_practicat6;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageView;
-import android.widget.TextView;
 
+import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.List;
 
-import es.studium.pmdm_practicat6.ui.peliculas.ModeloPelicula;
 import es.studium.pmdm_practicat6.ui.series.ModeloSerie;
+import es.studium.pmdm_practicat6.RecyclerViewOnItemClickListener;
 
-public class SerieAdapter extends RecyclerView.Adapter<SerieAdapter.SerieViewHolder>{
+public class SerieAdapter extends RecyclerView.Adapter<SerieViewHolder> {
+    private final List<ModeloSerie> items;
+    private final RecyclerViewOnItemClickListener listener;
 
-    private List<ModeloSerie> items;
-
-    public static class SerieViewHolder extends RecyclerView.ViewHolder
-    {
-        // Campos respectivos de un item
-        public ImageView caratula;
-        public TextView titulo;
-
-        public SerieViewHolder(View v)
-        {
-            super(v);
-            caratula = (ImageView) v.findViewById(R.id.imagen);
-            titulo = (TextView) v.findViewById(R.id.nombre);
-        }
+    // Constructor
+    public SerieAdapter(List<ModeloSerie> items, RecyclerViewOnItemClickListener listener) {
+        this.items = items;
+        this.listener = listener;
     }
 
-    public SerieAdapter(List<ModeloSerie> items)
-    {
-        this.items = items;
+    @NonNull
+    @Override
+    public SerieViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+        View itemView = LayoutInflater.from(parent.getContext())
+                .inflate(R.layout.tarjeta_serie, parent, false);
+        return new SerieViewHolder(itemView, listener); // Pasar el listener aquí
     }
 
     @Override
-    public int getItemCount()
-    {
+    public void onBindViewHolder(@NonNull SerieViewHolder holder, int position) {
+        ModeloSerie serie = items.get(position);
+        holder.caratula.setImageResource(serie.getCaratula());
+        holder.titulo.setText(serie.getTitulo());
+    }
+
+    @Override
+    public int getItemCount() {
         return items.size();
     }
-
-    @Override
-    public SerieViewHolder onCreateViewHolder(ViewGroup viewGroup, int i)
-    {
-        View v = LayoutInflater.from(viewGroup.getContext())
-                .inflate(R.layout.tarjeta_serie, viewGroup, false);
-        return new SerieViewHolder(v);
-    }
-
-    @Override
-    public void onBindViewHolder(SerieViewHolder viewHolder, int i)
-    {
-        viewHolder.caratula.setImageResource(items.get(i).getCaratula());
-        viewHolder.titulo.setText(items.get(i).getTitulo());
-    }
-
-
 }

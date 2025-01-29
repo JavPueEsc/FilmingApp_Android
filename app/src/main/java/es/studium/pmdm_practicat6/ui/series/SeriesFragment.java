@@ -4,6 +4,8 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Toast;
+
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
@@ -13,10 +15,11 @@ import java.util.ArrayList;
 import java.util.List;
 import es.studium.pmdm_practicat6.MainActivity;
 import es.studium.pmdm_practicat6.R;
+import es.studium.pmdm_practicat6.RecyclerViewOnItemClickListener;
 import es.studium.pmdm_practicat6.SerieAdapter;
 import es.studium.pmdm_practicat6.databinding.FragmentSeriesBinding;
 
-public class SeriesFragment extends Fragment {
+public class SeriesFragment extends Fragment  {
 
     private FragmentSeriesBinding binding;
 
@@ -39,7 +42,7 @@ public class SeriesFragment extends Fragment {
         //slideshowViewModel.getText().observe(getViewLifecycleOwner(), textView::setText);
 
         //CardView Series
-        List items = new ArrayList();
+        List<ModeloSerie> items = new ArrayList<>();
 
         items.add(new ModeloSerie(R.drawable.angel, "Angel Beats"));
         items.add(new ModeloSerie(R.drawable.death, "Death Note"));
@@ -58,7 +61,15 @@ public class SeriesFragment extends Fragment {
         RecyclerView.LayoutManager lManager = new LinearLayoutManager(getContext());
         recycler.setLayoutManager(lManager);
 // Crear un nuevo adaptador
-        SerieAdapter adapter = new SerieAdapter(items);
+        SerieAdapter adapter = new SerieAdapter(items, new RecyclerViewOnItemClickListener() {
+            @Override
+            public void onClick(View v, int position) {
+                // Aquí puedes manejar el clic en cada item
+                // Por ejemplo, mostrar un Toast con el título de la serie clickeada
+                ModeloSerie clickedSerie = items.get(position);
+                Toast.makeText(getContext(), "Has seleccionado: " + clickedSerie.getTitulo(), Toast.LENGTH_SHORT).show();
+            }
+        });
         recycler.setAdapter(adapter);
 //final
 
