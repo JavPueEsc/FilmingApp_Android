@@ -1,25 +1,41 @@
 package es.studium.pmdm_practicat6;
 
+import android.content.res.ColorStateList;
 import android.os.Bundle;
+import android.text.SpannableString;
+import android.text.style.ForegroundColorSpan;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.Menu;
 
 import com.google.android.material.snackbar.Snackbar;
 import com.google.android.material.navigation.NavigationView;
 
+import androidx.core.content.ContextCompat;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
 import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
+
+import java.util.ArrayList;
+import java.util.List;
 
 import es.studium.pmdm_practicat6.databinding.ActivityMainBinding;
+import es.studium.pmdm_practicat6.ui.peliculas.PeliculasFragment;
 
 public class MainActivity extends AppCompatActivity {
 
     private AppBarConfiguration mAppBarConfiguration;
     private ActivityMainBinding binding;
+
+    private RecyclerView recycler;
+    private RecyclerView.Adapter adapter;
+    private RecyclerView.LayoutManager lManager;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -42,8 +58,16 @@ public class MainActivity extends AppCompatActivity {
         NavigationUI.setupActionBarWithNavController(this, navController, mAppBarConfiguration);
         NavigationUI.setupWithNavController(navigationView, navController);
 
+        Menu menu = navigationView.getMenu();
+
+        // Cambiar colores de íconos y texto
+        customizeMenuItem(menu.findItem(R.id.nav_inicio), R.color.verdeApp, R.color.verdeApp);
+        customizeMenuItem(menu.findItem(R.id.nav_peliculas), R.color.rosaApp, R.color.rosaApp);
+        customizeMenuItem(menu.findItem(R.id.nav_series), R.color.amarilloApp, R.color.amarilloApp);
+
         // Cambiar el icono de la hamburguesa por otro icono
         binding.appBarMain.toolbar.setNavigationIcon(R.drawable.ic_icono_menulateral);
+
     }
 
 
@@ -60,4 +84,29 @@ public class MainActivity extends AppCompatActivity {
             binding.appBarMain.toolbar.setNavigationIcon(iconResId);
         }
     }
+
+    public void cambiarColorTextoBarraSuperior(int colorResId) {
+        if (binding.appBarMain.toolbar != null) {
+            // Usamos ContextCompat para obtener el color de manera compatible con API 30
+            int color = ContextCompat.getColor(this, colorResId);
+            binding.appBarMain.toolbar.setTitleTextColor(color);
+        }
+    }
+
+    // Método para personalizar cada ítem del menú
+    private void customizeMenuItem(MenuItem menuItem, int textColorResId, int iconColorResId) {
+        // Cambiar el color del ícono
+        menuItem.setIconTintList(ColorStateList.valueOf(getResources().getColor(iconColorResId)));
+
+        // Cambiar el color del texto usando SpannableString
+        SpannableString spannableTitle = new SpannableString(menuItem.getTitle());
+        spannableTitle.setSpan(
+                new ForegroundColorSpan(getResources().getColor(textColorResId)),
+                0,
+                spannableTitle.length(),
+                0
+        );
+        menuItem.setTitle(spannableTitle);
+    }
+
 }

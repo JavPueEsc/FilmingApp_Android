@@ -27,6 +27,8 @@ public class InicioFragment extends Fragment {
         View root = binding.getRoot();
 
         final TextView textView = binding.textInicio;
+
+
         homeViewModel.getText().observe(getViewLifecycleOwner(), textView::setText);
         return root;
     }
@@ -34,9 +36,12 @@ public class InicioFragment extends Fragment {
     @Override
     public void onResume() {
         super.onResume();
+        //Cambiar icono del menú lateral
         if (getActivity() instanceof MainActivity) {
             ((MainActivity) getActivity()).cambiarIconoMenuLateral(R.drawable.ic_icono_menulateral);
         }
+        //Cambiar el color del texto de la barra superior
+        ((MainActivity) getActivity()).cambiarColorTextoBarraSuperior(R.color.verdeApp);
     }
 
     @Override

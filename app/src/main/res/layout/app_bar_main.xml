@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -7,19 +8,44 @@
     tools:context=".MainActivity">
 
     <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:theme="@style/Theme.PMDM_PracticaT6.AppBarOverlay">
 
+        <!-- Toolbar principal -->
         <androidx.appcompat.widget.Toolbar
             android:id="@+id/toolbar"
             style="@style/EstiloBarraNavegacion"
             android:layout_width="match_parent"
-            android:layout_height="?attr/actionBarSize"
-            app:titleTextColor="#FFC107" />
+            android:layout_height="?attr/actionBarSize">
+
+
+            <!-- Imagen dentro del Toolbar -->
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="47dp"
+                android:layout_height="47dp"
+                android:layout_marginStart="30dp"
+                app:srcCompat="@drawable/logoapp" />
+
+            <!-- Segundo texto en la barra -->
+            <TextView
+                android:id="@+id/NombreApp"
+                style="@style/EstiloTituloBarraNavegacionNombreApp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+
+                android:text="@string/app_name2"
+                android:layout_marginTop="10dp"
+                android:textColor="@android:color/white" />
+
+        </androidx.appcompat.widget.Toolbar>
 
     </com.google.android.material.appbar.AppBarLayout>
 
+    <!-- Contenido principal de la actividad -->
     <include layout="@layout/content_main" />
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

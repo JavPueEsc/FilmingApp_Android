@@ -7,4 +7,9 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="azulApp">#011435</color>
+    <color name="verdeApp">#03bc9d</color>
+    <color name="rosaApp">#f04370</color>
+    <color name="amarilloApp">#e7a916</color>
+
 </resources>

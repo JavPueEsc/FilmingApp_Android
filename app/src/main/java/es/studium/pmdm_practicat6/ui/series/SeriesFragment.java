@@ -4,14 +4,16 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.TextView;
-
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
-
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
+import java.util.ArrayList;
+import java.util.List;
 import es.studium.pmdm_practicat6.MainActivity;
 import es.studium.pmdm_practicat6.R;
+import es.studium.pmdm_practicat6.SerieAdapter;
 import es.studium.pmdm_practicat6.databinding.FragmentSeriesBinding;
 
 public class SeriesFragment extends Fragment {
@@ -29,8 +31,37 @@ public class SeriesFragment extends Fragment {
         //Cambiar icono menú lateral
         ((MainActivity) getActivity()).cambiarIconoMenuLateral(R.drawable.ic_icono_menulateral);
 
-        final TextView textView = binding.textSeries;
-        slideshowViewModel.getText().observe(getViewLifecycleOwner(), textView::setText);
+        //final TextView textView = binding.textSeries;
+
+        //Cambiar el color del texto de la barra superior
+        ((MainActivity) getActivity()).cambiarColorTextoBarraSuperior(R.color.amarilloApp);
+
+        //slideshowViewModel.getText().observe(getViewLifecycleOwner(), textView::setText);
+
+        //CardView Series
+        List items = new ArrayList();
+
+        items.add(new ModeloSerie(R.drawable.angel, "Angel Beats"));
+        items.add(new ModeloSerie(R.drawable.death, "Death Note"));
+        items.add(new ModeloSerie(R.drawable.fate, "Fate Stay Night"));
+        items.add(new ModeloSerie(R.drawable.nhk, "Welcome to the NHK"));
+        items.add(new ModeloSerie(R.drawable.suzumiya, "Suzumiya Haruhi"));
+        items.add(new ModeloSerie(R.drawable.angel, "Angel Beats"));
+        items.add(new ModeloSerie(R.drawable.death, "Death Note"));
+        items.add(new ModeloSerie(R.drawable.fate, "Fate Stay Night"));
+        items.add(new ModeloSerie(R.drawable.nhk, "Welcome to the NHK"));
+        items.add(new ModeloSerie(R.drawable.suzumiya, "Suzumiya Haruhi"));
+// Obtener el Recycler
+        RecyclerView recycler = root.findViewById(R.id.myRecyclerView2);
+        recycler.setHasFixedSize(true);
+// Usar un administrador para LinearLayout
+        RecyclerView.LayoutManager lManager = new LinearLayoutManager(getContext());
+        recycler.setLayoutManager(lManager);
+// Crear un nuevo adaptador
+        SerieAdapter adapter = new SerieAdapter(items);
+        recycler.setAdapter(adapter);
+//final
+
         return root;
     }
 
