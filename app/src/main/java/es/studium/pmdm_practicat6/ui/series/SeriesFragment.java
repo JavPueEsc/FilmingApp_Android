@@ -5,10 +5,10 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Toast;
-
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
+import androidx.navigation.fragment.NavHostFragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 import java.util.ArrayList;
@@ -64,10 +64,17 @@ public class SeriesFragment extends Fragment  {
         SerieAdapter adapter = new SerieAdapter(items, new RecyclerViewOnItemClickListener() {
             @Override
             public void onClick(View v, int position) {
-                // Aquí puedes manejar el clic en cada item
-                // Por ejemplo, mostrar un Toast con el título de la serie clickeada
-                ModeloSerie clickedSerie = items.get(position);
-                Toast.makeText(getContext(), "Has seleccionado: " + clickedSerie.getTitulo(), Toast.LENGTH_SHORT).show();
+                // Gestión de la pulsación en una serie
+                //Abrimos un nuevo fargment
+                ModeloSerie seriePulsada = items.get(position);
+               // Toast.makeText(getContext(), "Has seleccionado: " + seriePulsada.getTitulo(), Toast.LENGTH_SHORT).show();
+                // Crear un bundle con los parámetros a enviar
+                Bundle args = new Bundle();
+                args.putString("tituloSerie", seriePulsada.getTitulo());
+                args.putInt("numeroSerie", position);
+                // Navegar al nuevo fragmento
+                NavHostFragment.findNavController(SeriesFragment.this)
+                        .navigate(R.id.nav_detallesSeriesFragment, args);
             }
         });
         recycler.setAdapter(adapter);
