@@ -11,4 +11,24 @@
     <string name="menu_inicio">Inicio</string>
     <string name="menu_peliculas">Películas</string>
     <string name="menu_series">Series</string>
+    <string name="menu_detalles">Detalles</string>
+    <string name="menu_caratula">Carátula</string>
+
+    <!-- Etiquetas layout detalles -->
+    <string name="lbl_titulo">Título:</string>
+    <string name="valor_titulo">Titulo de pelicula</string>
+    <string name="lbl_director">Director:</string>
+    <string name="valor_director">Director de pelicula</string>
+    <string name="lbl_calificacion">Calificación:</string>
+    <string name="lbl_reparto">Reparto / Personajes:</string>
+    <string name="valor_reparto">Actor 1, Actriz 2, Actor 1, Actriz 2, Actor 1, Actriz 2, Actor 1, Actriz 2,Actor 1, Actriz 2, Actor 1, Actriz 2, Actor 1, Actriz 2, Actor 1, Actriz 2Actor 1, Actriz 2, Actor 1, Actriz 2</string>
+    <string name="lbl_temporadas">Temporadas:</string>
+    <string name="valor_temporadas">Valor de temporadas</string>
+    <string name="lbl_sinopsis">Sinopsis:</string>
+    <string name="valor_sinopsis">Valor de sinopsis</string>
+
+    <!-- Etiquetas series -->
+    
+
+    <string name="valor_tituloCaratula">Título Carátula\nTitulo Carátula </string>
 </resources>

@@ -75,4 +75,32 @@
     <style name="textoTarjetasSerie">
         <item name="android:textColor">@color/amarilloApp</item>
     </style>
+
+    <!-- Estilo texto detalles peliculas/series-->
+    <style name="textoDetalles">
+        <item name="android:textColor">@color/azulApp</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="textoDetalles.justificado">
+        <item name="android:textColor">@color/azulApp</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:justificationMode">inter_word</item>
+    </style>
+
+    <!-- Estilo texto detalles labels peliculas/series-->
+    <style name="textoDetalles.lbl">
+        <item name="android:textColor">@color/azulApp</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:justificationMode">inter_word</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!-- Estilo texto detalles labels peliculas/series-->
+    <style name="textoDetalles.lblCaratula">
+        <item name="android:textColor">@color/azulApp</item>
+        <item name="android:textSize">40sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textAlignment">center</item>
+    </style>
 </resources>

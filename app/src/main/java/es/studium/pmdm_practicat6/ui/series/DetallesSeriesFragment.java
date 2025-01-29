@@ -16,7 +16,7 @@ import es.studium.pmdm_practicat6.R;
 public class DetallesSeriesFragment extends Fragment implements View.OnClickListener {
 
     TextView textoTituloSerie;
-    TextView posicionSerie;
+    String tituloSerie;
     static ImageView caratulaSerie;
     int numeroSerie =0;
 
@@ -30,19 +30,17 @@ public class DetallesSeriesFragment extends Fragment implements View.OnClickList
         super.onViewCreated(view, savedInstanceState);
 
         textoTituloSerie = view.findViewById(R.id.text_series);
-        posicionSerie = view.findViewById(R.id.posicion_series);
         caratulaSerie = view.findViewById(R.id.image_series);
         caratulaSerie.setOnClickListener(this);
 
         // Obtener argumentos del bundle
         if (getArguments() != null) {
-            String tituloSerie = getArguments().getString("tituloSerie");
+            tituloSerie = getArguments().getString("tituloSerie");
             numeroSerie = getArguments().getInt("numeroSerie");
 
             // Mostrar el título en el TextView
 
             textoTituloSerie.setText(tituloSerie);
-            posicionSerie.setText(String.valueOf(numeroSerie));
             establecerCaratulaSerie(numeroSerie, caratulaSerie);
         }
     }
@@ -90,6 +88,7 @@ public class DetallesSeriesFragment extends Fragment implements View.OnClickList
     if(view == caratulaSerie){
         // Crear un bundle con los parámetros a enviar
         Bundle args = new Bundle();
+        args.putString("tituloSerie2", tituloSerie);
         args.putInt("numeroSerie2", numeroSerie);
 
         // Navegar al nuevo fragmento
