@@ -29,4 +29,10 @@
         android:label="Detalles"
         tools:layout="@layout/fragment_detallesseries" />
 
+    <fragment
+        android:id="@+id/nav_caratulaSerieFragment"
+        android:name="es.studium.pmdm_practicat6.ui.series.CaratulaSerieFragment"
+        android:label="Caratula"
+        tools:layout="@layout/fragment_caratulaseries" />
+
 </navigation>
