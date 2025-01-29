@@ -42,16 +42,16 @@ public class PeliculasFragment extends Fragment {
         //CardView Peliculas
         List items = new ArrayList();
 
-        items.add(new ModeloPelicula(R.drawable.angel, "Angel Beats"));
-        items.add(new ModeloPelicula(R.drawable.death, "Death Note"));
-        items.add(new ModeloPelicula(R.drawable.fate, "Fate Stay Night"));
-        items.add(new ModeloPelicula(R.drawable.nhk, "Welcome to the NHK"));
-        items.add(new ModeloPelicula(R.drawable.suzumiya, "Suzumiya Haruhi"));
-        items.add(new ModeloPelicula(R.drawable.angel, "Angel Beats"));
-        items.add(new ModeloPelicula(R.drawable.death, "Death Note"));
-        items.add(new ModeloPelicula(R.drawable.fate, "Fate Stay Night"));
-        items.add(new ModeloPelicula(R.drawable.nhk, "Welcome to the NHK"));
-        items.add(new ModeloPelicula(R.drawable.suzumiya, "Suzumiya Haruhi"));
+        items.add(new ModeloPelicula(R.drawable.aa_thewire, "Angel Beats"));
+        items.add(new ModeloPelicula(R.drawable.ba_breakingbad, "Death Note"));
+        items.add(new ModeloPelicula(R.drawable.ca_friends, "Fate Stay Night"));
+        items.add(new ModeloPelicula(R.drawable.da_buffy, "Welcome to the NHK"));
+        items.add(new ModeloPelicula(R.drawable.ea_lost, "Suzumiya Haruhi"));
+        items.add(new ModeloPelicula(R.drawable.fa_southpark, "Angel Beats"));
+        items.add(new ModeloPelicula(R.drawable.ga_xfiles, "Death Note"));
+        items.add(new ModeloPelicula(R.drawable.ha_seinfeld, "Fate Stay Night"));
+        items.add(new ModeloPelicula(R.drawable.ia_madmen, "Welcome to the NHK"));
+        items.add(new ModeloPelicula(R.drawable.ja_futurama, "Suzumiya Haruhi"));
 // Obtener el Recycler
         RecyclerView recycler = root.findViewById(R.id.myRecyclerView);
         recycler.setHasFixedSize(true);

@@ -101,7 +101,7 @@
        android:id="@+id/valorReparto"
        style="@style/textoDetalles"
        android:layout_width="373dp"
-       android:layout_height="108dp"
+       android:layout_height="60dp"
        android:text="@string/valor_reparto"
        app:layout_constraintBottom_toBottomOf="parent"
        app:layout_constraintEnd_toEndOf="parent"
@@ -124,7 +124,7 @@
 
    <TextView
        android:id="@+id/valorSinopsis"
-       style="@style/textoDetalles"
+       style="@style/textoDetalles.justificado"
        android:layout_width="373dp"
        android:layout_height="180dp"
        android:text="@string/valor_sinopsis"
@@ -169,7 +169,7 @@
        app:layout_constraintStart_toStartOf="parent"
        app:layout_constraintTop_toTopOf="parent"
        app:layout_constraintVertical_bias="0.026"
-       tools:src="@drawable/death" />
+       tools:src="@drawable/aa_thewire" />
 
 
 

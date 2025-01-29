@@ -44,16 +44,16 @@ public class SeriesFragment extends Fragment  {
         //CardView Series
         List<ModeloSerie> items = new ArrayList<>();
 
-        items.add(new ModeloSerie(R.drawable.angel, "Angel Beats"));
-        items.add(new ModeloSerie(R.drawable.death, "Death Note"));
-        items.add(new ModeloSerie(R.drawable.fate, "Fate Stay Night"));
-        items.add(new ModeloSerie(R.drawable.nhk, "Welcome to the NHK"));
-        items.add(new ModeloSerie(R.drawable.suzumiya, "Suzumiya Haruhi"));
-        items.add(new ModeloSerie(R.drawable.angel, "Angel Beats"));
-        items.add(new ModeloSerie(R.drawable.death, "Death Note"));
-        items.add(new ModeloSerie(R.drawable.fate, "Fate Stay Night"));
-        items.add(new ModeloSerie(R.drawable.nhk, "Welcome to the NHK"));
-        items.add(new ModeloSerie(R.drawable.suzumiya, "Suzumiya Haruhi"));
+        items.add(new ModeloSerie(R.drawable.aa_thewire, "The Wire"));
+        items.add(new ModeloSerie(R.drawable.ba_breakingbad, "Breaking Bad"));
+        items.add(new ModeloSerie(R.drawable.ca_friends, "Friends"));
+        items.add(new ModeloSerie(R.drawable.da_buffy, "Buffy - The Vampire Slayer"));
+        items.add(new ModeloSerie(R.drawable.ea_lost, "Lost"));
+        items.add(new ModeloSerie(R.drawable.fa_southpark, "South Park"));
+        items.add(new ModeloSerie(R.drawable.ga_xfiles, "X Files"));
+        items.add(new ModeloSerie(R.drawable.ha_seinfeld, "Seinfeld"));
+        items.add(new ModeloSerie(R.drawable.ia_madmen, "Mad Men"));
+        items.add(new ModeloSerie(R.drawable.ja_futurama, "Futurama"));
 // Obtener el Recycler
         RecyclerView recycler = root.findViewById(R.id.myRecyclerView2);
         recycler.setHasFixedSize(true);
