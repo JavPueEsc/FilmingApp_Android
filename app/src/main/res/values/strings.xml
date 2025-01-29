@@ -26,9 +26,68 @@
     <string name="valor_temporadas">Valor de temporadas</string>
     <string name="lbl_sinopsis">Sinopsis:</string>
     <string name="valor_sinopsis">Valor de sinopsis</string>
+    <!-- Etiqueta layout caratula -->
+    <string name="valor_tituloCaratula">Título Carátula\nTitulo Carátula </string>
 
     <!-- Etiquetas series -->
-    
+    <string name="titulo_the_wire">The Wire</string>
+    <string name="director_the_wire">David Simon</string>
+    <string name="reparto_the_wire">Dominic West, Idris Elba, Michael K. Williams</string>
+    <string name="sinopsis_the_wire">Una mirada realista y compleja a la interacción entre el crimen, la policía y la política en Baltimore.</string>
+    <string name="temporadas_the_wire">5</string>
 
-    <string name="valor_tituloCaratula">Título Carátula\nTitulo Carátula </string>
+    <string name="titulo_breaking_bad">Breaking Bad</string>
+    <string name="director_breaking_bad">Vince Gilligan</string>
+    <string name="reparto_breaking_bad">Bryan Cranston, Aaron Paul, Anna Gunn</string>
+    <string name="sinopsis_breaking_bad">Un profesor de química convertido en fabricante de metanfetaminas lucha por mantener su doble vida.</string>
+    <string name="temporadas_breaking_bad">5</string>
+
+    <string name="titulo_friends">Friends</string>
+    <string name="director_friends">David Crane, Marta Kauffman</string>
+    <string name="reparto_friends">Jennifer Aniston, Courteney Cox, Matthew Perry</string>
+    <string name="sinopsis_friends">Seis amigos navegan las complejidades de la vida, el amor y el trabajo en Nueva York.</string>
+    <string name="temporadas_friends">10</string>
+
+    <string name="titulo_buffy">Buffy the Vampire Slayer</string>
+    <string name="director_buffy">Joss Whedon</string>
+    <string name="reparto_buffy">Sarah Michelle Gellar, Alyson Hannigan, Nicholas Brendon</string>
+    <string name="sinopsis_buffy">Una joven elegida debe luchar contra vampiros, demonios y otras amenazas sobrenaturales.</string>
+    <string name="temporadas_buffy">7</string>
+
+    <string name="titulo_lost">Lost</string>
+    <string name="director_lost">J.J. Abrams, Damon Lindelof</string>
+    <string name="reparto_lost">Matthew Fox, Evangeline Lilly, Josh Holloway</string>
+    <string name="sinopsis_lost">Supervivientes de un accidente de avión luchan por sobrevivir en una isla misteriosa llena de secretos.</string>
+    <string name="temporadas_lost">6</string>
+
+    <string name="titulo_south_park">South Park</string>
+    <string name="director_south_park">Trey Parker, Matt Stone</string>
+    <string name="reparto_south_park">Stan, Kyle, Cartman, Kenny</string>
+    <string name="sinopsis_south_park">Un grupo de niños en Colorado explora temas sociales y políticos con humor negro y sátira.</string>
+    <string name="temporadas_south_park">14</string>
+
+    <string name="titulo_xfiles">The X-Files</string>
+    <string name="director_xfiles">Chris Carter</string>
+    <string name="reparto_xfiles">David Duchovny, Gillian Anderson, Mitch Pileggi</string>
+    <string name="sinopsis_xfiles">Dos agentes del FBI investigan fenómenos paranormales y conspiraciones gubernamentales.</string>
+    <string name="temporadas_xfiles">9</string>
+
+    <string name="titulo_seinfeld">Seinfeld</string>
+    <string name="director_seinfeld">Larry David, Jerry Seinfeld</string>
+    <string name="reparto_seinfeld">Jerry Seinfeld, Julia Louis-Dreyfus, Jason Alexander</string>
+    <string name="sinopsis_seinfeld">Una comedia que sigue la vida cotidiana de un comediante y sus excéntricos amigos en Nueva York.</string>
+    <string name="temporadas_seinfeld">9</string>
+
+    <string name="titulo_mad_men">Mad Men</string>
+    <string name="director_mad_men">Matthew Weiner</string>
+    <string name="reparto_mad_men">Jon Hamm, Elisabeth Moss, January Jones</string>
+    <string name="sinopsis_mad_men">Una mirada a la vida profesional y personal de publicistas en Nueva York durante los años 60.</string>
+    <string name="temporadas_mad_men">7</string>
+
+    <string name="titulo_futurama">Futurama</string>
+    <string name="director_futurama">Matt Groening, David X. Cohen</string>
+    <string name="reparto_futurama">Fry, Leela, Bender, Profesor Farnsworth</string>
+    <string name="sinopsis_futurama">Un repartidor criogenizado despierta en el año 3000 y se une a una peculiar tripulación espacial.</string>
+    <string name="temporadas_futurama">6</string>
+
 </resources>
