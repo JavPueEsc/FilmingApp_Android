@@ -131,7 +131,7 @@ public class DetallesPeliculasFragment extends Fragment implements View.OnClickL
             case 2:
                 textoTituloPelicula.setText(tituloPelicula);
                 textoDirectorPelicula.setText(R.string.director_mad_max);
-                calificacionPelicula.setImageResource(R.drawable.a_cincoestrellas);
+                calificacionPelicula.setImageResource(R.drawable.b_cuatroestrellas);
                 textoRepartoPelicula.setText(R.string.reparto_mad_max);
                 textoSinopsisPelicula.setText(R.string.sinopsis_mad_max);
                 textoSecuelasPrecuelasPelicula.setText(R.string.secuelas_precuelas_mad_max);
@@ -139,7 +139,7 @@ public class DetallesPeliculasFragment extends Fragment implements View.OnClickL
             case 3:
                 textoTituloPelicula.setText(tituloPelicula);
                 textoDirectorPelicula.setText(R.string.director_interstellar);
-                calificacionPelicula.setImageResource(R.drawable.a_cincoestrellas);
+                calificacionPelicula.setImageResource(R.drawable.c_tresestrellas);
                 textoRepartoPelicula.setText(R.string.reparto_interstellar);
                 textoSinopsisPelicula.setText(R.string.sinopsis_interstellar);
                 textoSecuelasPrecuelasPelicula.setText(R.string.secuelas_precuelas_interstellar);
@@ -179,7 +179,7 @@ public class DetallesPeliculasFragment extends Fragment implements View.OnClickL
             case 8:
                 textoTituloPelicula.setText(tituloPelicula);
                 textoDirectorPelicula.setText(R.string.director_gravity);
-                calificacionPelicula.setImageResource(R.drawable.a_cincoestrellas);
+                calificacionPelicula.setImageResource(R.drawable.d_dosestrellas);
                 textoRepartoPelicula.setText(R.string.reparto_gravity);
                 textoSinopsisPelicula.setText(R.string.sinopsis_gravity);
                 textoSecuelasPrecuelasPelicula.setText(R.string.secuelas_precuelas_gravity);

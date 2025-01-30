@@ -25,7 +25,7 @@
     <string name="lbl_reparto">Reparto / Personajes:</string>
     <string name="valor_reparto">Actor 1, Actriz 2, Actor 1, Actriz 2, Actor 1, Actriz 2, Actor 1, Actriz 2,Actor 1, Actriz 2, Actor 1, Actriz 2, Actor 1, Actriz 2, Actor 1, Actriz 2Actor 1, Actriz 2, Actor 1, Actriz 2</string>
     <string name="lbl_temporadas">Temporadas:</string>
-    <string name="lbl_precuela_secuela">Precuela/secuela::</string>
+    <string name="lbl_precuela_secuela">Precuela/secuela:</string>
     <string name="valor_precuela_secuela">¿La tiene?</string>
     <string name="valor_temporadas">Valor de temporadas</string>
     <string name="lbl_sinopsis">Sinopsis:</string>
