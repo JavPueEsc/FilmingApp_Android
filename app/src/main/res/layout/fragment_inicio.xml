@@ -4,34 +4,164 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.inicio.InicioFragment">
+    android:background="@color/verdeApp"
+    tools:context=".ui.inicio.InicioFragment"
+    tools:layout_editor_absoluteX="-17dp"
+    tools:layout_editor_absoluteY="0dp">
 
-    <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.5" />
 
+    <!-- Rectángulo -->
     <TextView
-        android:id="@+id/text_inicio"
+        android:id="@+id/titulo_inicio1"
+        style="@style/TituloMenuLateral.inicioNombreApp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:textAlignment="center"
-        android:textSize="20sp"
+        android:text="@string/titulo_inicio2"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/imageView2"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/imageView2"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.047" />
+
+    <TextView
+        android:id="@+id/titulo_inicio2"
+        style="@style/TituloInicio_recomendacion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/titulo_inicio1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titulo_inicio1"
+        app:layout_constraintVertical_bias="0.01" />
+
+    <View
+        android:id="@+id/rectangulo_izqSup"
+        android:layout_width="378dp"
+        android:layout_height="235dp"
+        android:layout_marginTop="232dp"
+        android:background="@drawable/rectangulo_fondo1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <View
+        android:id="@+id/rectangulo_izqInf"
+        android:layout_width="378dp"
+        android:layout_height="235dp"
+        android:background="@drawable/rectangulo_fondo2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rectangulo_izqSup"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <ImageView
+        android:id="@+id/imagePeliculaInicio"
+        android:layout_width="150dp"
+        android:layout_height="200dp"
+        android:src="@drawable/oa_terminator"
+        app:layout_constraintBottom_toBottomOf="@+id/rectangulo_izqSup"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.09"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/rectangulo_izqSup"
+        app:layout_constraintVertical_bias="0.51" />
+
+    <ImageView
+        android:id="@+id/imageSerieInicio"
+        android:layout_width="150dp"
+        android:layout_height="200dp"
+        android:src="@drawable/ea_lost"
+        app:layout_constraintBottom_toBottomOf="@+id/rectangulo_izqInf"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.09"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/rectangulo_izqInf"
+        app:layout_constraintVertical_bias="0.51" />
+
+    <TextView
+        android:id="@+id/peliculaInicio"
+        style="@style/LabelInicio"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="@string/Pelicula_inicio"
+        app:layout_constraintBottom_toBottomOf="@+id/rectangulo_izqSup"
+        app:layout_constraintEnd_toEndOf="@+id/rectangulo_izqSup"
+        app:layout_constraintHorizontal_bias="0.732"
+        app:layout_constraintStart_toStartOf="@+id/rectangulo_izqSup"
+        app:layout_constraintTop_toTopOf="@+id/rectangulo_izqSup"
+        app:layout_constraintVertical_bias="0.089" />
+
+    <TextView
+        android:id="@+id/SerieInicio"
+        style="@style/LabelInicio"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="@string/Serie_inicio"
+        app:layout_constraintBottom_toBottomOf="@+id/rectangulo_izqInf"
+        app:layout_constraintEnd_toEndOf="@+id/rectangulo_izqInf"
+        app:layout_constraintHorizontal_bias="0.732"
+        app:layout_constraintStart_toStartOf="@+id/rectangulo_izqInf"
+        app:layout_constraintTop_toTopOf="@+id/rectangulo_izqInf"
+        app:layout_constraintVertical_bias="0.089" />
+
+    <TextView
+        android:id="@+id/TituloPeliculaInicio"
+        style="@style/TitulosInicio"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="@string/titulo_terminator"
+        app:layout_constraintBottom_toBottomOf="@+id/rectangulo_izqSup"
+        app:layout_constraintEnd_toEndOf="@+id/rectangulo_izqSup"
+        app:layout_constraintHorizontal_bias="0.938"
+        app:layout_constraintStart_toStartOf="@+id/rectangulo_izqSup"
+        app:layout_constraintTop_toBottomOf="@+id/peliculaInicio"
+        app:layout_constraintVertical_bias="0.01" />
+
+    <TextView
+        android:id="@+id/TituloSerieInicio"
+        style="@style/TitulosInicio"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="@string/titulo_lost"
+        app:layout_constraintBottom_toBottomOf="@+id/rectangulo_izqInf"
+        app:layout_constraintEnd_toEndOf="@+id/rectangulo_izqInf"
+        app:layout_constraintHorizontal_bias="0.938"
+        app:layout_constraintStart_toStartOf="@+id/rectangulo_izqInf"
+        app:layout_constraintTop_toBottomOf="@+id/SerieInicio"
+        app:layout_constraintVertical_bias="0.01" />
+
+    <TextView
+        android:id="@+id/CriticaPeliculaInicio"
+        style="@style/CriticasInicio"
+        android:layout_width="200dp"
+        android:layout_height="120dp"
+        android:text="@string/Critica_terminator"
+        app:layout_constraintBottom_toBottomOf="@+id/rectangulo_izqSup"
+        app:layout_constraintEnd_toEndOf="@+id/rectangulo_izqSup"
+        app:layout_constraintHorizontal_bias="0.938"
+        app:layout_constraintStart_toStartOf="@+id/rectangulo_izqSup"
+        app:layout_constraintTop_toBottomOf="@+id/TituloPeliculaInicio"
+        app:layout_constraintVertical_bias="0.01"
+         />
+
+    <TextView
+        android:id="@+id/criticaSerieInicio"
+        style="@style/CriticasInicio"
+        android:layout_width="200dp"
+        android:layout_height="120dp"
+        android:text="@string/Critica_lost"
+        app:layout_constraintBottom_toBottomOf="@+id/rectangulo_izqInf"
+        app:layout_constraintEnd_toEndOf="@+id/rectangulo_izqInf"
+        app:layout_constraintHorizontal_bias="0.938"
+        app:layout_constraintStart_toStartOf="@+id/rectangulo_izqInf"
+        app:layout_constraintTop_toBottomOf="@+id/TituloSerieInicio"
+        app:layout_constraintVertical_bias="0.01"
+         />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

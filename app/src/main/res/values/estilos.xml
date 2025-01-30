@@ -28,7 +28,6 @@
 
     <!-- Estilo título menu lateral-->
     <style name="TituloMenuLateral" parent="TextAppearance.AppCompat.Large">
-
         <item name="android:textColor">@color/azulApp</item>
         <item name="android:fontFamily">@font/filmletters</item>
         <item name="android:textAlignment">center</item>
@@ -45,7 +44,6 @@
     <style name="EstiloOpcionesMenuLateral" parent="Widget.MaterialComponents.NavigationView">
         <item name="android:background">@color/white</item>
         <item name="itemIconTint">@color/verdeApp</item>
-
     </style>
 
     <!-- Estilo opcion inicio -->
@@ -79,6 +77,40 @@
     <!-- Estilo texto tarjetas Series-->
     <style name="textoTarjetasSerie">
         <item name="android:textColor">@color/amarilloApp</item>
+    </style>
+
+    <!-- Estilo título inicio-->
+    <style name="TituloInicio_recomendacion" parent="TextAppearance.AppCompat.Large">
+        <item name="android:textColor">@color/azulApp</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textSize">45sp</item>
+        <item name="android:textStyle">bold|italic</item>
+    </style>
+
+    <!-- Estilo label pelicula y serie de inicio inicio-->
+    <style name="LabelInicio" parent="TextAppearance.AppCompat.Large">
+        <item name="android:textColor">@color/azulApp</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textStyle">bold|italic</item>
+    </style>
+
+    <!-- Estilo titulos de pelicula y serie inicio-->
+    <style name="TitulosInicio" parent="TextAppearance.AppCompat.Large">
+        <item name="android:textColor">@color/azulApp</item>
+        <item name="android:textSize">35sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!-- Estilo criticas de pelicula y serie inicio-->
+    <style name="CriticasInicio" parent="TextAppearance.AppCompat.Large">
+        <item name="android:textColor">@color/azulApp</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textStyle">italic</item>
+        <item name="android:justificationMode">inter_word</item>
+    </style>
+
+    <style name="TituloMenuLateral.inicioNombreApp">
+        <item name="android:textSize">60sp</item>
     </style>
 
     <!-- Estilo texto detalles peliculas/series-->

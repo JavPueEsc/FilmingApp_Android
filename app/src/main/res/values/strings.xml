@@ -30,6 +30,14 @@
     <string name="valor_temporadas">Valor de temporadas</string>
     <string name="lbl_sinopsis">Sinopsis:</string>
     <string name="valor_sinopsis">Valor de sinopsis</string>
+
+    <string name="titulo_inicio1">le recomienda...</string>
+    <string name="titulo_inicio2">Filming\nApp</string>
+    <string name="Pelicula_inicio">Película</string>
+    <string name="Serie_inicio">Serie</string>
+    <string name="Critica_terminator">&quot;Un cyborg del futuro regresa para eliminar a la humanidad antes de que nazca su salvador.&quot;</string>
+    <string name="Critica_lost">&quot;Un avión se estrella en una isla desconocida, y las respuestas están enterradas en sus secretos.&quot;</string>
+
     <!-- Etiqueta layout caratula -->
     <string name="valor_tituloCaratula">Título Carátula\nTitulo Carátula </string>
     <string name="valor_tituloCaratulaLand">Título Carátula Titulo Carátula </string>
@@ -60,7 +68,7 @@
         <string name="sinopsis_interstellar">Un grupo de astronautas se aventura a través de un agujero de gusano en busca de un nuevo hogar para la humanidad, enfrentándose a desafíos científicos y emocionales que ponen a prueba su resistencia y esperanza.</string>
         <string name="secuelas_precuelas_interstellar">No</string>
 
-        <string name="titulo_terminator">The Terminator</string>
+        <string name="titulo_terminator">Terminator</string>
         <string name="director_terminator">James Cameron</string>
         <string name="reparto_terminator">Arnold Schwarzenegger, Linda Hamilton, Michael Biehn</string>
         <string name="sinopsis_terminator">Un cyborg asesino es enviado desde el futuro para eliminar a una mujer cuyo hijo liderará la resistencia humana, mientras un protector lucha por mantenerla a salvo y preservar el futuro de la humanidad.</string>
