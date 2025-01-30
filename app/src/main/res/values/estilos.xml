@@ -11,7 +11,12 @@
         <item name="android:textSize">20sp</item>
         <item name="android:fontFamily">@font/filmletters</item>
         <item name="android:textAlignment">center</item>
+    </style>
 
+    <style name="EstiloTituloBarraNavegacionNombreApp.Land" parent="TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:textSize">45sp</item>
+        <item name="android:fontFamily">@font/filmletters</item>
+        <item name="android:textAlignment">center</item>
     </style>
 
     <!-- Estilo barra navegación -->

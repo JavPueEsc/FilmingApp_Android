@@ -10,28 +10,29 @@
 
    <ImageView
        android:id="@+id/caratula_series"
-       android:layout_width="367dp"
-       android:layout_height="566dp"
+       android:layout_width="197dp"
+       android:layout_height="249dp"
        app:layout_constraintBottom_toBottomOf="parent"
        app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintHorizontal_bias="0.499"
        app:layout_constraintStart_toStartOf="parent"
        app:layout_constraintTop_toTopOf="parent"
-       app:layout_constraintVertical_bias="0.787"
+       app:layout_constraintVertical_bias="0.843"
        tools:src="@drawable/aa_thewire" />
 
    <TextView
        android:id="@+id/tituloTextoCaratula"
        style="@style/textoDetalles.lblCaratula"
-       android:layout_width="365dp"
-       android:layout_height="100dp"
+       android:layout_width="636dp"
+       android:layout_height="55dp"
        android:gravity="center"
-       android:text="@string/valor_tituloCaratula"
+       android:text="@string/valor_tituloCaratulaLand"
        app:layout_constraintBottom_toTopOf="@+id/caratula_series"
        app:layout_constraintEnd_toEndOf="parent"
-       app:layout_constraintHorizontal_bias="0.5"
+       app:layout_constraintHorizontal_bias="0.494"
        app:layout_constraintStart_toStartOf="parent"
        app:layout_constraintTop_toTopOf="parent"
-       app:layout_constraintVertical_bias="0.5" />
+       app:layout_constraintVertical_bias="0.516" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

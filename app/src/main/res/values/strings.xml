@@ -1,6 +1,8 @@
 <resources>
     <string name="app_name">FilmingApp</string>
     <string name="app_name2">Filming\nApp</string>
+    <string name="app_name2Land1">Filming</string>
+    <string name="app_name2Land2">App</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
     <string name="nav_header_title">Filming\nApp</string>
@@ -28,6 +30,7 @@
     <string name="valor_sinopsis">Valor de sinopsis</string>
     <!-- Etiqueta layout caratula -->
     <string name="valor_tituloCaratula">Título Carátula\nTitulo Carátula </string>
+    <string name="valor_tituloCaratulaLand">Título Carátula Titulo Carátula </string>
 
     <!-- Etiquetas series -->
     <string name="titulo_the_wire">The Wire</string>

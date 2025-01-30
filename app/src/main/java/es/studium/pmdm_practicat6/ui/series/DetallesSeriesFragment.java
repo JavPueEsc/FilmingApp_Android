@@ -22,6 +22,7 @@ public class DetallesSeriesFragment extends Fragment implements View.OnClickList
     TextView textoTemporadasSerie;
     String tituloSerie;
     static ImageView caratulaSerie;
+    ImageView calificacionSerie;
     int numeroSerie = 0;
 
     @Override
@@ -39,6 +40,7 @@ public class DetallesSeriesFragment extends Fragment implements View.OnClickList
         textoSinopsisSerie = view.findViewById(R.id.valorSinopsis);
         textoTemporadasSerie = view.findViewById(R.id.valorTemporadas);
         caratulaSerie = view.findViewById(R.id.image_series);
+        calificacionSerie = view.findViewById(R.id.image_calificacion);
         caratulaSerie.setOnClickListener(this);
 
         // Obtener argumentos del bundle
@@ -49,46 +51,46 @@ public class DetallesSeriesFragment extends Fragment implements View.OnClickList
             // Mostrar el título en el TextView
 
             //textoTituloSerie.setText(tituloSerie);
-            establecerDatosSerie(numeroSerie, textoTituloSerie,textoDirectorSerie,textoRepartoSerie,textoSinopsisSerie,textoTemporadasSerie,tituloSerie);
+            establecerDatosSerie(numeroSerie, textoTituloSerie,textoDirectorSerie,calificacionSerie,textoRepartoSerie,textoSinopsisSerie,textoTemporadasSerie,tituloSerie);
             establecerCaratulaSerie(numeroSerie, caratulaSerie);
         }
     }
 
 
-    public static void establecerCaratulaSerie(int numeroSerie, ImageView caratulaS) {
+    public static void establecerCaratulaSerie(int numeroSerie, ImageView caratulas) {
         switch (numeroSerie) {
             case 0:
-                caratulaS.setImageResource(R.drawable.aa_thewire);
+                caratulas.setImageResource(R.drawable.aa_thewire);
                 break;
             case 1:
-                caratulaS.setImageResource(R.drawable.ba_breakingbad);
+                caratulas.setImageResource(R.drawable.ba_breakingbad);
                 break;
             case 2:
-                caratulaS.setImageResource(R.drawable.ca_friends);
+                caratulas.setImageResource(R.drawable.ca_friends);
                 break;
             case 3:
-                caratulaS.setImageResource(R.drawable.da_buffy);
+                caratulas.setImageResource(R.drawable.da_buffy);
                 break;
             case 4:
-                caratulaS.setImageResource(R.drawable.ea_lost);
+                caratulas.setImageResource(R.drawable.ea_lost);
                 break;
             case 5:
-                caratulaS.setImageResource(R.drawable.fa_southpark);
+                caratulas.setImageResource(R.drawable.fa_southpark);
                 break;
             case 6:
-                caratulaS.setImageResource(R.drawable.ga_xfiles);
+                caratulas.setImageResource(R.drawable.ga_xfiles);
                 break;
             case 7:
-                caratulaS.setImageResource(R.drawable.ha_seinfeld);
+                caratulas.setImageResource(R.drawable.ha_seinfeld);
                 break;
             case 8:
-                caratulaS.setImageResource(R.drawable.ia_madmen);
+                caratulas.setImageResource(R.drawable.ia_madmen);
                 break;
             case 9:
-                caratulaS.setImageResource(R.drawable.ja_futurama);
+                caratulas.setImageResource(R.drawable.ja_futurama);
                 break;
             default:
-                caratulaS.setImageResource(R.drawable.logoapp);
+                caratulas.setImageResource(R.drawable.logoapp);
                 break;
         }
     }
@@ -108,11 +110,12 @@ public class DetallesSeriesFragment extends Fragment implements View.OnClickList
         }
     }
 
-    public static void establecerDatosSerie(int numeroSerie, TextView textoTituloSerie, TextView textoDirectorSerie, TextView textoRepartoSerie, TextView textoSinopsisSerie, TextView textoTemporadasSerie, String tituloSerie) {
+    public static void establecerDatosSerie(int numeroSerie, TextView textoTituloSerie, TextView textoDirectorSerie,ImageView calificacionSerie, TextView textoRepartoSerie, TextView textoSinopsisSerie, TextView textoTemporadasSerie, String tituloSerie) {
         switch (numeroSerie) {
             case 0:
                 textoTituloSerie.setText(tituloSerie);
                 textoDirectorSerie.setText(R.string.director_the_wire);
+                calificacionSerie.setImageResource(R.drawable.a_cincoestrellas);
                 textoRepartoSerie.setText(R.string.reparto_the_wire);
                 textoSinopsisSerie.setText(R.string.sinopsis_the_wire);
                 textoTemporadasSerie.setText(R.string.temporadas_the_wire);
@@ -120,6 +123,7 @@ public class DetallesSeriesFragment extends Fragment implements View.OnClickList
             case 1:
                 textoTituloSerie.setText(tituloSerie);
                 textoDirectorSerie.setText(R.string.director_breaking_bad);
+                calificacionSerie.setImageResource(R.drawable.a_cincoestrellas);
                 textoRepartoSerie.setText(R.string.reparto_breaking_bad);
                 textoSinopsisSerie.setText(R.string.sinopsis_breaking_bad);
                 textoTemporadasSerie.setText(R.string.temporadas_breaking_bad);
@@ -127,6 +131,7 @@ public class DetallesSeriesFragment extends Fragment implements View.OnClickList
             case 2:
                 textoTituloSerie.setText(tituloSerie);
                 textoDirectorSerie.setText(R.string.director_friends);
+                calificacionSerie.setImageResource(R.drawable.b_cuatroestrellas);
                 textoRepartoSerie.setText(R.string.reparto_friends);
                 textoSinopsisSerie.setText(R.string.sinopsis_friends);
                 textoTemporadasSerie.setText(R.string.temporadas_friends);
@@ -134,6 +139,7 @@ public class DetallesSeriesFragment extends Fragment implements View.OnClickList
             case 3:
                 textoTituloSerie.setText(tituloSerie);
                 textoDirectorSerie.setText(R.string.director_buffy);
+                calificacionSerie.setImageResource(R.drawable.c_tresestrellas);
                 textoRepartoSerie.setText(R.string.reparto_buffy);
                 textoSinopsisSerie.setText(R.string.sinopsis_buffy);
                 textoTemporadasSerie.setText(R.string.temporadas_buffy);
@@ -141,6 +147,7 @@ public class DetallesSeriesFragment extends Fragment implements View.OnClickList
             case 4:
                 textoTituloSerie.setText(tituloSerie);
                 textoDirectorSerie.setText(R.string.director_lost);
+                calificacionSerie.setImageResource(R.drawable.a_cincoestrellas);
                 textoRepartoSerie.setText(R.string.reparto_lost);
                 textoSinopsisSerie.setText(R.string.sinopsis_lost);
                 textoTemporadasSerie.setText(R.string.temporadas_lost);
@@ -148,6 +155,7 @@ public class DetallesSeriesFragment extends Fragment implements View.OnClickList
             case 5:
                 textoTituloSerie.setText(tituloSerie);
                 textoDirectorSerie.setText(R.string.director_south_park);
+                calificacionSerie.setImageResource(R.drawable.d_dosestrellas);
                 textoRepartoSerie.setText(R.string.reparto_south_park);
                 textoSinopsisSerie.setText(R.string.sinopsis_south_park);
                 textoTemporadasSerie.setText(R.string.temporadas_south_park);
@@ -155,6 +163,7 @@ public class DetallesSeriesFragment extends Fragment implements View.OnClickList
             case 6:
                 textoTituloSerie.setText(tituloSerie);
                 textoDirectorSerie.setText(R.string.director_xfiles);
+                calificacionSerie.setImageResource(R.drawable.b_cuatroestrellas);
                 textoRepartoSerie.setText(R.string.reparto_xfiles);
                 textoSinopsisSerie.setText(R.string.sinopsis_xfiles);
                 textoTemporadasSerie.setText(R.string.temporadas_xfiles);
@@ -162,6 +171,7 @@ public class DetallesSeriesFragment extends Fragment implements View.OnClickList
             case 7:
                 textoTituloSerie.setText(tituloSerie);
                 textoDirectorSerie.setText(R.string.director_seinfeld);
+                calificacionSerie.setImageResource(R.drawable.e_unaestrella);
                 textoRepartoSerie.setText(R.string.reparto_seinfeld);
                 textoSinopsisSerie.setText(R.string.sinopsis_seinfeld);
                 textoTemporadasSerie.setText(R.string.temporadas_seinfeld);
@@ -169,6 +179,7 @@ public class DetallesSeriesFragment extends Fragment implements View.OnClickList
             case 8:
                 textoTituloSerie.setText(tituloSerie);
                 textoDirectorSerie.setText(R.string.director_mad_men);
+                calificacionSerie.setImageResource(R.drawable.a_cincoestrellas);
                 textoRepartoSerie.setText(R.string.reparto_mad_men);
                 textoSinopsisSerie.setText(R.string.sinopsis_mad_men);
                 textoTemporadasSerie.setText(R.string.temporadas_mad_men);
@@ -176,6 +187,7 @@ public class DetallesSeriesFragment extends Fragment implements View.OnClickList
             case 9:
                 textoTituloSerie.setText(tituloSerie);
                 textoDirectorSerie.setText(R.string.director_futurama);
+                calificacionSerie.setImageResource(R.drawable.b_cuatroestrellas);
                 textoRepartoSerie.setText(R.string.reparto_futurama);
                 textoSinopsisSerie.setText(R.string.sinopsis_futurama);
                 textoTemporadasSerie.setText(R.string.temporadas_futurama);
