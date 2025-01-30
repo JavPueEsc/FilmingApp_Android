@@ -87,6 +87,10 @@
         <item name="android:textStyle">bold|italic</item>
     </style>
 
+    <style name="TituloInicio_recomendacion.land">
+        <item name="android:textSize">35sp</item>
+    </style>
+
     <!-- Estilo label pelicula y serie de inicio inicio-->
     <style name="LabelInicio" parent="TextAppearance.AppCompat.Large">
         <item name="android:textColor">@color/azulApp</item>
@@ -98,6 +102,13 @@
     <style name="TitulosInicio" parent="TextAppearance.AppCompat.Large">
         <item name="android:textColor">@color/azulApp</item>
         <item name="android:textSize">35sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!-- Estilo titulos de pelicula y serie inicio land-->
+    <style name="TitulosInicioLand" parent="TextAppearance.AppCompat.Large">
+        <item name="android:textColor">@color/azulApp</item>
+        <item name="android:textSize">30sp</item>
         <item name="android:textStyle">bold</item>
     </style>
 

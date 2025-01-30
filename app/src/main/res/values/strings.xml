@@ -33,6 +33,8 @@
 
     <string name="titulo_inicio1">le recomienda...</string>
     <string name="titulo_inicio2">Filming\nApp</string>
+    <string name="titulo_inicio2a">Filming</string>
+    <string name="titulo_inicio2b">App</string>
     <string name="Pelicula_inicio">Película</string>
     <string name="Serie_inicio">Serie</string>
     <string name="Critica_terminator">&quot;Un cyborg del futuro regresa para eliminar a la humanidad antes de que nazca su salvador.&quot;</string>
