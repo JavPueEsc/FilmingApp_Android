@@ -6,11 +6,9 @@ import android.view.ViewGroup;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
-
 import java.util.List;
-
 import es.studium.pmdm_practicat6.ui.series.ModeloSerie;
-import es.studium.pmdm_practicat6.RecyclerViewOnItemClickListener;
+
 
 public class SerieAdapter extends RecyclerView.Adapter<SerieViewHolder> {
     private final List<ModeloSerie> items;

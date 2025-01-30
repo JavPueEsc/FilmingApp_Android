@@ -3,59 +3,41 @@ package es.studium.pmdm_practicat6;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageView;
-import android.widget.TextView;
-
+import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
-
+import es.studium.pmdm_practicat6.PeliculaViewHolder;
 import java.util.List;
-
 import es.studium.pmdm_practicat6.ui.peliculas.ModeloPelicula;
-import es.studium.pmdm_practicat6.ui.peliculas.PeliculasFragment;
 
-public class PeliculaAdapter extends RecyclerView.Adapter<PeliculaAdapter.PeliculaViewHolder>{
 
-    private List<ModeloPelicula> items;
+public class PeliculaAdapter extends RecyclerView.Adapter<PeliculaViewHolder>{
 
-    public static class PeliculaViewHolder extends RecyclerView.ViewHolder
-    {
-        // Campos respectivos de un item
-        public ImageView caratula;
-        public TextView titulo;
+    private final List<ModeloPelicula> items;
+    private final RecyclerViewOnItemClickListener listener;
 
-        public PeliculaViewHolder(View v)
-        {
-            super(v);
-            caratula = (ImageView) v.findViewById(R.id.imagen);
-            titulo = (TextView) v.findViewById(R.id.nombre);
-        }
+    // Constructor
+    public PeliculaAdapter(List<ModeloPelicula> items, RecyclerViewOnItemClickListener listener) {
+        this.items = items;
+        this.listener = listener;
     }
 
-    public PeliculaAdapter(List<ModeloPelicula> items)
-    {
-        this.items = items;
+    @NonNull
+    @Override
+    public PeliculaViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+        View itemView = LayoutInflater.from(parent.getContext())
+                .inflate(R.layout.tarjeta_pelicula, parent, false);
+        return new PeliculaViewHolder(itemView, listener); // Pasar el listener aquí
     }
 
     @Override
-    public int getItemCount()
-    {
+    public void onBindViewHolder(@NonNull PeliculaViewHolder holder, int position) {
+        ModeloPelicula pelicula = items.get(position);
+        holder.caratula.setImageResource(pelicula.getCaratula());
+        holder.titulo.setText(pelicula.getTitulo());
+    }
+
+    @Override
+    public int getItemCount() {
         return items.size();
     }
-
-    @Override
-    public PeliculaViewHolder onCreateViewHolder(ViewGroup viewGroup, int i)
-    {
-        View v = LayoutInflater.from(viewGroup.getContext())
-                .inflate(R.layout.tarjeta_pelicula, viewGroup, false);
-        return new PeliculaViewHolder(v);
-    }
-
-    @Override
-    public void onBindViewHolder(PeliculaViewHolder viewHolder, int i)
-    {
-        viewHolder.caratula.setImageResource(items.get(i).getCaratula());
-        viewHolder.titulo.setText(items.get(i).getTitulo());
-    }
-
-
 }

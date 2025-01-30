@@ -25,12 +25,76 @@
     <string name="lbl_reparto">Reparto / Personajes:</string>
     <string name="valor_reparto">Actor 1, Actriz 2, Actor 1, Actriz 2, Actor 1, Actriz 2, Actor 1, Actriz 2,Actor 1, Actriz 2, Actor 1, Actriz 2, Actor 1, Actriz 2, Actor 1, Actriz 2Actor 1, Actriz 2, Actor 1, Actriz 2</string>
     <string name="lbl_temporadas">Temporadas:</string>
+    <string name="lbl_precuela_secuela">Precuela/secuela::</string>
+    <string name="valor_precuela_secuela">¿La tiene?</string>
     <string name="valor_temporadas">Valor de temporadas</string>
     <string name="lbl_sinopsis">Sinopsis:</string>
     <string name="valor_sinopsis">Valor de sinopsis</string>
     <!-- Etiqueta layout caratula -->
     <string name="valor_tituloCaratula">Título Carátula\nTitulo Carátula </string>
     <string name="valor_tituloCaratulaLand">Título Carátula Titulo Carátula </string>
+
+    <!-- Etiquetas películas -->
+
+        <string name="titulo_blade_runner">Blade Runner</string>
+        <string name="director_blade_runner">Ridley Scott</string>
+        <string name="reparto_blade_runner">Harrison Ford, Rutger Hauer, Sean Young</string>
+        <string name="sinopsis_blade_runner">En un futuro distópico, un cazador de androides persigue replicantes mientras reflexiona sobre la naturaleza de la humanidad, la inteligencia artificial y el impacto de la tecnología en una sociedad al borde del colapso moral.</string>
+        <string name="secuelas_precuelas_blade_runner">Sí: Blade Runner 2049</string>
+
+        <string name="titulo_inception">Inception</string>
+        <string name="director_inception">Christopher Nolan</string>
+        <string name="reparto_inception">Leonardo DiCaprio, Joseph Gordon-Levitt, Ellen Page</string>
+        <string name="sinopsis_inception">Un ladrón con la habilidad de infiltrarse en los sueños se embarca en una peligrosa misión para implantar una idea en la mente de un objetivo, enfrentando complejos desafíos mentales y emocionales en el proceso.</string>
+        <string name="secuelas_precuelas_inception">No</string>
+
+        <string name="titulo_mad_max">Mad Max: Fury Road</string>
+        <string name="director_mad_max">George Miller</string>
+        <string name="reparto_mad_max">Tom Hardy, Charlize Theron, Nicholas Hoult</string>
+        <string name="sinopsis_mad_max">En un mundo postapocalíptico, un guerrero solitario se une a una rebelde en una frenética huida a través del desierto, enfrentándose a un tirano opresor y su ejército mientras luchan por la libertad y la redención.</string>
+        <string name="secuelas_precuelas_mad_max">Sí: The Road Warrior</string>
+
+        <string name="titulo_interstellar">Interstellar</string>
+        <string name="director_interstellar">Christopher Nolan</string>
+        <string name="reparto_interstellar">Matthew McConaughey, Anne Hathaway, Jessica Chastain</string>
+        <string name="sinopsis_interstellar">Un grupo de astronautas se aventura a través de un agujero de gusano en busca de un nuevo hogar para la humanidad, enfrentándose a desafíos científicos y emocionales que ponen a prueba su resistencia y esperanza.</string>
+        <string name="secuelas_precuelas_interstellar">No</string>
+
+        <string name="titulo_terminator">The Terminator</string>
+        <string name="director_terminator">James Cameron</string>
+        <string name="reparto_terminator">Arnold Schwarzenegger, Linda Hamilton, Michael Biehn</string>
+        <string name="sinopsis_terminator">Un cyborg asesino es enviado desde el futuro para eliminar a una mujer cuyo hijo liderará la resistencia humana, mientras un protector lucha por mantenerla a salvo y preservar el futuro de la humanidad.</string>
+        <string name="secuelas_precuelas_terminator">Sí: Terminator 2: Judgment Day</string>
+
+        <string name="titulo_dark_knight">The Dark Knight</string>
+        <string name="director_dark_knight">Christopher Nolan</string>
+        <string name="reparto_dark_knight">Christian Bale, Heath Ledger, Aaron Eckhart</string>
+        <string name="sinopsis_dark_knight">El Caballero Oscuro se enfrenta al Joker, un agente del caos que pone a prueba sus límites morales y su compromiso con Gotham, en una lucha entre el orden y el descontrol en una ciudad al borde del colapso.</string>
+        <string name="secuelas_precuelas_dark_knight">Sí: Batman Begins</string>
+
+        <string name="titulo_seven">Se7en</string>
+        <string name="director_seven">David Fincher</string>
+        <string name="reparto_seven">Brad Pitt, Morgan Freeman, Gwyneth Paltrow</string>
+        <string name="sinopsis_seven">Dos detectives investigan un macabro caso de asesinatos inspirados en los siete pecados capitales, enfrentándose a un criminal brillante cuyo plan desafía su ética y pone en juego sus vidas personales.</string>
+        <string name="secuelas_precuelas_seven">No</string>
+
+        <string name="titulo_john_wick">John Wick</string>
+        <string name="director_john_wick">Chad Stahelski</string>
+        <string name="reparto_john_wick">Keanu Reeves, Ian McShane, Willem Dafoe</string>
+        <string name="sinopsis_john_wick">Tras la muerte de su perro, un asesino retirado vuelve al mundo del crimen para vengarse de quienes le arrebataron lo único que le quedaba, desatando una ola de violencia en un submundo criminal despiadado.</string>
+        <string name="secuelas_precuelas_john_wick">Sí: John Wick: Chapter 2</string>
+
+        <string name="titulo_gravity">Gravity</string>
+        <string name="director_gravity">Alfonso Cuarón</string>
+        <string name="reparto_gravity">Sandra Bullock, George Clooney</string>
+        <string name="sinopsis_gravity">Dos astronautas quedan varados en el espacio tras un accidente catastrófico, luchando contra la desesperación y las fuerzas de la naturaleza mientras buscan una forma de regresar a casa.</string>
+        <string name="secuelas_precuelas_gravity">No</string>
+
+        <string name="titulo_looper">Looper</string>
+        <string name="director_looper">Rian Johnson</string>
+        <string name="reparto_looper">Joseph Gordon-Levitt, Bruce Willis, Emily Blunt</string>
+        <string name="sinopsis_looper">En un futuro donde los viajes en el tiempo son utilizados por mafias, un asesino a sueldo descubre que su próximo objetivo es su yo futuro, lo que desencadena un dilema moral y una lucha por la supervivencia.</string>
+        <string name="secuelas_precuelas_looper">No</string>
 
     <!-- Etiquetas series -->
     <string name="titulo_the_wire">The Wire</string>

@@ -4,21 +4,171 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/rosaApp"
     tools:context=".ui.peliculas.DetallesPeliculasFragment">
 
    <TextView
-        android:id="@+id/text_peliculas"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:textAlignment="center"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+       android:id="@+id/lblTituloPelicula"
+       style="@style/textoDetalles.lbl"
+       android:layout_width="150dp"
+       android:layout_height="wrap_content"
+       android:text="@string/lbl_titulo"
+       app:layout_constraintBottom_toBottomOf="parent"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintHorizontal_bias="0.793"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toTopOf="parent"
+       app:layout_constraintVertical_bias="0.020" />
 
+   <TextView
+       android:id="@+id/text_peliculas"
+       style="@style/textoDetalles"
+       android:layout_width="150dp"
+       android:layout_height="wrap_content"
+       app:layout_constraintBottom_toBottomOf="parent"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintHorizontal_bias="0.793"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toBottomOf="@+id/lblTituloPelicula"
+       app:layout_constraintVertical_bias="0.01"
+       tools:text="@string/valor_titulo" />
+
+   <TextView
+       android:id="@+id/lblDirectorPelicula"
+       style="@style/textoDetalles.lbl"
+       android:layout_width="150dp"
+       android:layout_height="wrap_content"
+       android:text="@string/lbl_director"
+       app:layout_constraintBottom_toBottomOf="parent"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintHorizontal_bias="0.793"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toBottomOf="@+id/text_peliculas"
+       app:layout_constraintVertical_bias="0.062" />
+
+   <TextView
+       android:id="@+id/valorDirectorPelicula"
+       style="@style/textoDetalles"
+       android:layout_width="150dp"
+       android:layout_height="wrap_content"
+       android:text="@string/valor_director"
+       app:layout_constraintBottom_toBottomOf="parent"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintHorizontal_bias="0.793"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toBottomOf="@+id/lblDirectorPelicula"
+       app:layout_constraintVertical_bias="0.011" />
+
+   <TextView
+       android:id="@+id/lblClasificacionPelicula"
+       style="@style/textoDetalles.lbl"
+       android:layout_width="150dp"
+       android:layout_height="wrap_content"
+       android:text="@string/lbl_calificacion"
+       app:layout_constraintBottom_toBottomOf="parent"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintHorizontal_bias="0.793"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toBottomOf="@+id/valorDirectorPelicula"
+       app:layout_constraintVertical_bias="0.062" />
+
+   <ImageView
+       android:id="@+id/image_calificacionPelicula"
+       android:layout_width="139dp"
+       android:layout_height="23dp"
+       android:src="@drawable/a_cincoestrellas"
+       app:layout_constraintBottom_toBottomOf="parent"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintHorizontal_bias="0.761"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toBottomOf="@+id/lblClasificacionPelicula"
+       app:layout_constraintVertical_bias="0.011" />
+
+   <TextView
+       android:id="@+id/lblRepartoPelicula"
+       style="@style/textoDetalles.lbl"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="@string/lbl_reparto"
+       app:layout_constraintBottom_toBottomOf="parent"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintHorizontal_bias="0.056"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toBottomOf="@+id/image_peliculas"
+       app:layout_constraintVertical_bias="0.062" />
+
+   <TextView
+       android:id="@+id/valorRepartoPelicula"
+       style="@style/textoDetalles"
+       android:layout_width="373dp"
+       android:layout_height="60dp"
+       android:text="@string/valor_reparto"
+       app:layout_constraintBottom_toBottomOf="parent"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toBottomOf="@+id/lblRepartoPelicula"
+       app:layout_constraintVertical_bias="0.01" />
+
+   <TextView
+       android:id="@+id/lblSinopsisPelicula"
+       style="@style/textoDetalles.lbl"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="@string/lbl_sinopsis"
+       app:layout_constraintBottom_toBottomOf="parent"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintHorizontal_bias="0.058"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toBottomOf="@+id/valorRepartoPelicula"
+       app:layout_constraintVertical_bias="0.01" />
+
+   <TextView
+       android:id="@+id/valorSinopsisPelicula"
+       style="@style/textoDetalles.justificado"
+       android:layout_width="373dp"
+       android:layout_height="180dp"
+       android:text="@string/valor_sinopsis"
+       app:layout_constraintBottom_toBottomOf="parent"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toBottomOf="@+id/lblSinopsisPelicula"
+       app:layout_constraintVertical_bias="0.01" />
+
+   <TextView
+       android:id="@+id/lblPre_secuelaPelicula"
+       style="@style/textoDetalles.lbl"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="@string/lbl_precuela_secuela"
+       app:layout_constraintBottom_toBottomOf="parent"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintHorizontal_bias="0.065"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toBottomOf="@+id/valorSinopsisPelicula"
+       app:layout_constraintVertical_bias="0.01" />
+
+   <TextView
+       android:id="@+id/valorPre_secuelaPelicula"
+       style="@style/textoDetalles"
+       android:layout_width="373dp"
+       android:layout_height="25dp"
+       android:text="@string/valor_precuela_secuela"
+       app:layout_constraintBottom_toBottomOf="parent"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toBottomOf="@+id/lblPre_secuelaPelicula"
+       app:layout_constraintVertical_bias="0.01" />
+
+   <ImageView
+       android:id="@+id/image_peliculas"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       app:layout_constraintBottom_toBottomOf="parent"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintHorizontal_bias="0.056"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toTopOf="parent"
+       app:layout_constraintVertical_bias="0.026"
+       tools:src="@drawable/aa_thewire" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
