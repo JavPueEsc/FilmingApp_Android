@@ -4,12 +4,15 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
 import androidx.navigation.fragment.NavHostFragment;
+
+import java.util.Random;
 
 import es.studium.pmdm_practicat6.MainActivity;
 import es.studium.pmdm_practicat6.R;
@@ -72,7 +75,7 @@ public class InicioFragment extends Fragment implements View.OnClickListener{
                     .navigate(R.id.nav_detallesPeliculasFragment, args);
         }
         else{
-            int numeroSerie = 4;
+            int numeroSerie = 4;;
             String tituloSerie = getString(R.string.titulo_lost);
             // Crear un bundle con los parámetros a enviar
             Bundle args = new Bundle();

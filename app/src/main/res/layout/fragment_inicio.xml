@@ -134,7 +134,7 @@
         app:layout_constraintHorizontal_bias="0.938"
         app:layout_constraintStart_toStartOf="@+id/rectangulo_izqInf"
         app:layout_constraintTop_toBottomOf="@+id/SerieInicio"
-        app:layout_constraintVertical_bias="0.01" />
+        app:layout_constraintVertical_bias="0.0" />
 
     <TextView
         android:id="@+id/CriticaPeliculaInicio"

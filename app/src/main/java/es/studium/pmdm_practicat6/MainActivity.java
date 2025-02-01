@@ -5,10 +5,8 @@ import android.os.Bundle;
 import android.text.SpannableString;
 import android.text.style.ForegroundColorSpan;
 import android.view.MenuItem;
-import android.view.View;
 import android.view.Menu;
 
-import com.google.android.material.snackbar.Snackbar;
 import com.google.android.material.navigation.NavigationView;
 
 import androidx.core.content.ContextCompat;
@@ -18,14 +16,9 @@ import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
 import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import java.util.ArrayList;
-import java.util.List;
-
 import es.studium.pmdm_practicat6.databinding.ActivityMainBinding;
-import es.studium.pmdm_practicat6.ui.peliculas.PeliculasFragment;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -61,9 +54,9 @@ public class MainActivity extends AppCompatActivity {
         Menu menu = navigationView.getMenu();
 
         // Cambiar colores de íconos y texto
-        customizeMenuItem(menu.findItem(R.id.nav_inicio), R.color.verdeApp, R.color.verdeApp);
-        customizeMenuItem(menu.findItem(R.id.nav_peliculas), R.color.rosaApp, R.color.rosaApp);
-        customizeMenuItem(menu.findItem(R.id.nav_series), R.color.amarilloApp, R.color.amarilloApp);
+        personalizarOpcionesMenu(menu.findItem(R.id.nav_inicio), R.color.verdeApp, R.color.white);
+        personalizarOpcionesMenu(menu.findItem(R.id.nav_peliculas), R.color.rosaApp, R.color.white);
+        personalizarOpcionesMenu(menu.findItem(R.id.nav_series), R.color.amarilloApp, R.color.white);
 
         // Cambiar el icono de la hamburguesa por otro icono
         binding.appBarMain.toolbar.setNavigationIcon(R.drawable.ic_icono_menulateral);
@@ -94,7 +87,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     // Método para personalizar cada ítem del menú
-    private void customizeMenuItem(MenuItem menuItem, int textColorResId, int iconColorResId) {
+    private void personalizarOpcionesMenu(MenuItem menuItem, int textColorResId, int iconColorResId) {
         // Cambiar el color del ícono
         menuItem.setIconTintList(ColorStateList.valueOf(getResources().getColor(iconColorResId)));
 

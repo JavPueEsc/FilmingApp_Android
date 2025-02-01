@@ -53,7 +53,7 @@ public class PeliculasFragment extends Fragment {
         items.add(new ModeloPelicula(R.drawable.na_interstellar, "Interstellar"));
         items.add(new ModeloPelicula(R.drawable.oa_terminator, "Terminator"));
         items.add(new ModeloPelicula(R.drawable.pa_darknight, "Batman - The dark night"));
-        items.add(new ModeloPelicula(R.drawable.qa_seven, "Se7en"));
+        items.add(new ModeloPelicula(R.drawable.qa_seven, "Seven"));
         items.add(new ModeloPelicula(R.drawable.ra_johnwick, "John Wick"));
         items.add(new ModeloPelicula(R.drawable.sa_gravity, "Gravity"));
         items.add(new ModeloPelicula(R.drawable.ta_looper, "Looper"));
